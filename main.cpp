@@ -13,36 +13,7 @@
 using namespace std;
 
 int main()
-{
-  //Method Calling
-   //--------Methods Calling--------
-  gu1-> displayUserDetails();
-  gu1-> checkBusSchedule();
-  
-  ru1-> login();
-  ru1-> displayDetails();
-  ru1-> logout();
-  
-  d1-> displayDriverDetails();
-  d1-> displayBusSchedule();
-  d1-> checkBusRoutes();
-  
-  bus1-> displayBusDetails();
-  
-  b1-> displayBooking();
-  
-  p1-> displayPaymentDetails();
-  
-  t1-> displayTicketDetails();
-  
-  bs1-> displayBusSchedule();
-  
-  f1-> displayFeedback();
-  
-  r1-> bookingDetailsReport();
-  r1-> ticketDetailsReport();
-  r1-> paymentDetails();
-  
+{ 
   // Creating Dynamic Objects
   
   GuestUser *gu1;
@@ -74,6 +45,35 @@ int main()
   
   Report = r1;
   r1 = new Report(); // Dynamic Object for Report
+  
+   //Method Calling
+  
+  gu1-> displayUserDetails();
+  gu1-> checkBusSchedule();
+  
+  ru1-> login();
+  ru1-> displayDetails();
+  ru1-> logout();
+  
+  d1-> displayDriverDetails();
+  d1-> displayBusSchedule();
+  d1-> checkBusRoutes();
+  
+  bus1-> displayBusDetails();
+  
+  b1-> displayBooking();
+  
+  p1-> displayPaymentDetails();
+  
+  t1-> displayTicketDetails();
+  
+  bs1-> displayBusSchedule();
+  
+  f1-> displayFeedback();
+  
+  r1-> bookingDetailsReport();
+  r1-> ticketDetailsReport();
+  r1-> paymentDetails();
   
   //deallocate Memory (Release Memory)
   
